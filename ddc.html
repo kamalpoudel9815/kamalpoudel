@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ganesh Basic School official website</title>
+    <link rel="stylesheet" href="dd.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="D:\Downloads/gg.jpg">
+</head>
+<body> 
+
+     <nav>
+       <a href="D:\Downloads/gg.jpg" target="_blank">
+       <div class="logo"><img src="D:\Downloads/gg.jpg" >
+       </div></a>
+      
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="dd.html"><i class="fas fa-home"></i> Home</a></li>
+         
+          <li><a href="dds.html"><i class="fab fa-servicestack"></i> Services</a></li>
+          
+          <li><a class="active" href="ddc.html"><i class="fas fa-phone-volume"></i> Contact</a></li>
+        </ul>
+     </nav>
+       <p class="par"><img style="height: 70px; " src="D:\Downloads/gg.jpg" >Shree Ganesh Basic School</p>
+       <div class="clock">
+      <div class="display">
+</div>
+</div>
+<script>
+      setInterval(function(){
+        const clock = document.querySelector(".display");
+        let time = new Date();
+        let sec = time.getSeconds();
+        let min = time.getMinutes();
+        let hr = time.getHours();
+        let day = 'AM';
+        if(hr > 12){
+          day = 'PM';
+          hr = hr - 12;
+        }
+        if(hr == 0){
+          hr = 12;
+        }
+        if(sec < 10){
+          sec = '0' + sec;
+        }
+        if(min < 10){
+          min = '0' + min;
+        }
+        if(hr < 10){
+          hr = '0' + hr;
+        }
+        clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+      });
+    </script>
+    <div style="background-color: black;" class="contact-wrap">
+
+      
+
+      <div style="height: 1000px; width: 1000px;" class="contact-in">
+        <h1>Send a Message</h1>
+        
+      <iframe class="iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdiQ7FR9Pdc4hvSy-822ETgSro1gWS01KWjipMqr9vgLj9DvA/viewform?embedded=true" width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="contact-in">
+        <iframe src=https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14251.905712056605!2d88.0128798!3d26.7451283!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x962683862c114f9e!2sShree%20ganesh%20basic%20school!5e0!3m2!1sen!2snp!4v1634875955048!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+
+    
+     <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h3>School</h3>
+          <ul>
+            <li><a style="font-size: 25px;" href="dd.html">Home</a></li>
+            <li><a style="font-size: 25px;" href="dds.html">Service</a></li>
+            <li><a style="font-size: 25px;" href="ddc.html">Contact Us</a></li>
+            
+          </ul>
+        </div>
+        <br>
+       
+        <div class="footer-col">
+          <h3>follow us</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/Shree-Ganesh-Basic-School-101425948985633"target="_blank"><i class="fab fa-facebook-f"></i></a>
+            
+          </div>
+          <br>
+          <br>
+       
+    </div>
+    <div style="color: white;" class="contact-in">
+        <h1 style="color:red; ">Contact Info</h1>
+        <h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+        <p>98********</p>
+        <br>
+        <br>
+        <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+        <p>ganeshbasicschoolarjundhara@gmail.com</p>
+        <br>
+        <br>
+        <h2><i class="fa fa-map-marker" aria-hidden="true" ></i> Address</h2>
+        <p>Arjundhara-1, Jhapa, NEPAL</p>
+        </ul>
+      </div>
+  </footer>
+  <p class="sss" style="clear: both; color: red;   background-color:chartreuse; padding: 10px; font-weight: bold;">Copyright &copy; 2021 Ganesh Basic School</p>
+  <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+
+</body>
+</html>
